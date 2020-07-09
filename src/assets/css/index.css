@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
-.main-screen__bg, .page {
+.item__image, .item__logo, .main-screen__bg, .page {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -7,7 +7,7 @@
   left: 0;
 }
 
-.header__row {
+.item__logo, .header__row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -258,4 +258,95 @@ body {
   color: #848789;
   font-size: 18px;
   line-height: 34px;
+}
+.block__text_justify {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 30px;
+}
+.block__text_justify::after {
+  content: "";
+  display: block;
+  margin: 35px auto 0 auto;
+  width: 50px;
+  height: 1px;
+  background-color: #ebebeb;
+}
+@media (max-width: 1500px) {
+  .block__text_justify::after {
+    margin: 15px auto 0 auto;
+  }
+}
+
+.brands_reverse .brands__column {
+  order: 1;
+}
+.brands_reverse .brands__column_big {
+  order: 2;
+}
+.brands__row {
+  display: flex;
+}
+.brands__column {
+  flex: 0 1 33.333%;
+}
+.brands__column_big {
+  flex: 0 1 66.667%;
+}
+.brands__content {
+  padding: 70px 65px 55px 65px;
+  position: relative;
+}
+.brands__content::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-right: -10px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 10px solid #ffffff;
+  z-index: 5;
+  transform: translateX(-50%);
+}
+.brands__image {
+  padding-bottom: 37.51%;
+}
+@media (max-width: 1500px) {
+  .brands__content {
+    padding: 40px 35px 30px 35px;
+  }
+}
+@media (max-width: 1100px) {
+  .brands__row {
+    flex-direction: column;
+  }
+}
+
+.item {
+  display: block;
+  position: relative;
+  height: 100%;
+}
+.item__logo {
+  z-index: 5;
+  background-color: rgba(100, 194, 158, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  transition-delay: 0s;
+}
+.item__image {
+  display: block;
+}
+.item:hover .item__logo {
+  opacity: 1;
+  visibility: visible;
+}
+@media (max-width: 1100px) {
+  .item {
+    height: auto;
+  }
 }
