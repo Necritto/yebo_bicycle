@@ -40,6 +40,7 @@ body {
 .container {
   max-width: 1130px;
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 .bgimg {
@@ -59,4 +60,49 @@ body {
   }
 }
 
+.slick-slider {
+  position: relative;
+
+  .slick-track {
+    display: flex;
+    align-items: flex-start;
+  }
+  .slick-list {
+    overflow: hidden;
+  }
+
+  .slick-dots {
+    @extend %center;
+    padding-top: 100px;
+
+    li {
+      margin: 0 5px;
+
+      button {
+        font-size: 0;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        border: 1px solid #c8c8c8;
+        background-color: transparent;
+      }
+
+      &.slick-active {
+        button {
+          background-color: #a9afb3;
+        }
+      }
+    }
+
+    @media (max-width: 900px) {
+      padding-top: 60px;
+    }
+
+    @media (max-width: 600px) {
+      padding-top: 30px;
+    }
+  }
+}
+
 @import "./modules/header.scss";
+@import "./modules/main.scss";
