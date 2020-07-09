@@ -296,3 +296,75 @@
     }
   }
 }
+
+.subscribe {
+  &__body {
+    padding: 110px 0;
+    max-width: 534px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__logo {
+    margin-bottom: 39px;
+  }
+
+  &__label {
+    margin-bottom: 35px;
+    color: #848789;
+    font-size: 24px;
+    font-style: italic;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    flex: 1 1 auto;
+    padding-right: 8px;
+
+    .input {
+      width: 100%;
+      height: 69px;
+      border: 1px solid #d3d7d9;
+      background-color: #ebebeb;
+      padding: 0 28px;
+      color: #929292;
+      font-size: 20px;
+      font-style: italic;
+    }
+  }
+
+  &__button {
+    flex: 0 0 126px;
+  }
+
+  &__btn {
+    width: 100%;
+    height: 69px;
+    line-height: 69px;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #64c29e;
+    border: none;
+  }
+
+  @media (max-width: 750px) {
+    &__body {
+      padding: 50px 0;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__form {
+      display: block;
+    }
+
+    &__input {
+      padding: 0 0 8px 0;
+    }
+  }
+}
