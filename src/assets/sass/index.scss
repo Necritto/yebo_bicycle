@@ -40,6 +40,7 @@ body {
 .container {
   max-width: 1130px;
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 .bgimg {
@@ -60,3 +61,4 @@ body {
 }
 
 @import "./modules/header.scss";
+@import "./modules/main.scss";

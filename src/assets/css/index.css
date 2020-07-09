@@ -48,6 +48,7 @@ body {
 .container {
   max-width: 1130px;
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 .bgimg {
@@ -221,4 +222,40 @@ body {
     transform: rotate(45deg);
     bottom: 8px;
   }
+}
+
+.generation {
+  padding: 120px 0;
+  background-color: #f7f7f7;
+}
+@media (max-width: 900px) {
+  .generation {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 600px) {
+  .generation {
+    padding: 30px 0;
+  }
+}
+
+.block {
+  text-align: center;
+}
+.block__icon {
+  margin: 0 0 33px 0;
+}
+.block__title {
+  color: #353738;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  margin-bottom: 18px;
+}
+.block__text {
+  color: #848789;
+  font-size: 18px;
+  line-height: 34px;
 }
