@@ -555,6 +555,7 @@ body {
   color: #ffffff;
   background-color: #64c29e;
   border: none;
+  cursor: pointer;
 }
 @media (max-width: 750px) {
   .subscribe__body {
