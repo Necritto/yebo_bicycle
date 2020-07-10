@@ -21,7 +21,16 @@ const menu = document.querySelector(".icon-menu");
 menu.addEventListener("click", () => {
   menu.classList.toggle("active");
   menu.nextElementSibling.classList.toggle("active");
+  document.body.classList.toggle("lock");
 });
+
+document.querySelectorAll(".scroll").forEach((el) =>
+  el.addEventListener("click", () => {
+    menu.classList.remove("active");
+    menu.nextElementSibling.classList.remove("active");
+    document.body.classList.remove("lock");
+  })
+);
 
 // Prevenent default
 
